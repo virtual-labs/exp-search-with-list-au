@@ -2,12 +2,12 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "What is the main advantage of using the Breadth First Search Algorithm?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "It guarantees the shortest path between two nodes in a graph.",
+        "b": " It requires less memory than other search algorithms.",
+        "c": " It is faster than other search algorithms",
+        "d": "It can be used on any type of graph."
       },
       "explanations": {
         "a": "Explanation 1  <a href='www.google.com'>here</a>",
@@ -19,12 +19,46 @@
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "Which of the following is NOT a step in the Breadth First Search Algorithm?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Add the start node to the open list.",
+        "b": "Remove the start node from the open list.",
+        "c": "Expand the current node and add its neighbors to the open list.",
+        "d": "Choose the neighbor with the highest priority."
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "What is the purpose of the closed list in the Breadth First Search Algorithm?",
+      "answers": {
+        "a": "To store the nodes that have been visited and expanded.",
+        "b": "To store the nodes that have not yet been visited.",
+        "c": "To store the nodes that have the highest priority.",
+        "d": "To store the nodes that have the lowest priority."
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "What is the difference between the open list and the closed list in the Breadth First Search Algorithm?",
+      "answers": {
+        "a": "The open list stores the nodes that have been visited and the closed list stores the nodes that have not been visited.",
+        "b": "The open list stores the nodes that have the highest priority and the closed list stores the nodes that have the lowest priority.",
+        "c": "The open list stores the nodes that have not yet been expanded and the closed list stores the nodes that have been expanded.",
+        "d": "The open list stores the nodes that have been added to the queue and the closed list stores the nodes that have been removed from the queue."
       },
       "explanations": {
         "a": "Explanation 1  <a href='www.google.com'>here</a>",
@@ -33,6 +67,23 @@
         "d": "Explanation 2"
       },
       "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which of the following is a drawback of using the Breadth First Search Algorithm?",
+      "answers": {
+        "a": "It can get stuck in loops if there are cycles in the graph.",
+        "b": "It requires too much memory for large graphs.",
+        "c": "It is not guaranteed to find the shortest path between two nodes.",
+        "d": "It is not suitable for graphs with weighted edges."
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "b",
       "difficulty": "beginner"
     }
   ]

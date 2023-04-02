@@ -2,12 +2,12 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "  What is the Breadth First Search Algorithm used for??",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "To search the shortest path in a graph.",
+        "b": "To search the longest path in a graph.",
+        "c": "To search the most visited node in a graph.",
+        "d": "To search the most isolated node in a graph."
       },
       "explanations": {
         "a": "Explanation 1  <a href='www.google.com'>here</a>",
@@ -19,12 +19,63 @@
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "Which data structure is used to store the nodes in the Breadth First Search Algorithm?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Stack",
+        "b": "Queue",
+        "c": "Heap",
+        "d": "Linked List"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "What is the time complexity of the Breadth First Search Algorithm in the worst-case scenario?",
+      "answers": {
+        "a": "O(log n)",
+        "b": "O(n)",
+        "c": "O(n log n)",
+        "d": "O(n^2)"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which list is used to store the visited nodes in the Breadth First Search Algorithm?",
+      "answers": {
+        "a": "Open List",
+        "b": "Closed List",
+        "c": "Queue List",
+        "d": "Priority List"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "What happens when a node is visited in the Breadth First Search Algorithm?",
+      "answers": {
+        "a": "The node is added to the open list.",
+        "b": "The node is removed from the open list.",
+        "c": "The node is added to the closed list.",
+        "d": "The node is removed from the closed list."
       },
       "explanations": {
         "a": "Explanation 1  <a href='www.google.com'>here</a>",
