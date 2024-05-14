@@ -1,5 +1,2 @@
-### Aim of the experiment
-Breadth first search explores the space level by level only when there are no more states to be explored at a given level does the algorithm move on to the next level.
-
-We implement BFS using lists open and closed to keep track of progress through the state space. In the order list, the elements will be those who have been generated but whose children have not been examined. The closed list records the states that have been examined and whose children have been generated. The order of removing the states from the open list will be the order of searching. The open is maintained as a queue on the first in first out data structure. States are added to the right of the list and removed from the left
-The objective is to determine routes utilizing the BFS with open and closed list algorithm, which are contingent upon the input provided by the user.
+<h3> Aim of the experiment</h3>
+This experiment aims to implement and evaluate a search algorithm using open and closed lists to efficiently explore a search space. It involves assessing the algorithm's effectiveness, comparing it with other search methods, and examining the impact of different data structures and strategies on its performance.
