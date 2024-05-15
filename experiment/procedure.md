@@ -1,18 +1,37 @@
-# Procedure
-Breadth first search explores the space level by level only when there are no more states to be explored at a given level does the algorithm move on to the next level.
-We implement BFS using lists open and closed to keep track of progress through the state space. In the order list, the elements will be those who have been generated but whose children have not been examined. The closed list records the states that have been examined and whose children have been generated. The order of removing the states from the open list will be the order of searching. The open is maintained as a queue on the first in first out data structure. States are added to the right of the list and removed from the left
-The objective is to determine route utilizing the BFS with open and closed List, which are contingent upon the input provided by the user.
+<h3>Procedure</h3> 
 
-## Create the Graph and set the search parameters:
-    Select creating graph manual/random
-    Enter Source Node and Destination Node
-    Initiate Search on Graph
-## Generate solution:
-    Visualize the steps 
-    Visualize the path from selecting a starting point on the graph and then following a the BFS algorithm with open and closed list
-    Iterations can be animated; paths can be highlighted.
-    The result will be a path which displays the end of the search.
-
-## Evaluate :
-    Define following:	
-    Path and algorithm iterations
+<h5> Breadth-First Search (BFS) with open and closed lists</h5>
+<ol>
+<li>Initialization:</li>
+<ul>
+<li>Enter the number of nodes in the graph.</li>
+<li>Enter the starting node for the BFS traversal.</li>
+</ul>
+<li>Create the Graph:</li>
+<ul>
+<li>Choose the method of creating the graph:</li>
+<ul>
+<li>If choosing "Random", generate connections between nodes randomly.</li>
+<li>If choosing "Manual", proceed to step 3 for manual node connection.</li></ul>
+</ul>
+<li>Manual Graph Creation (if selected):</li>
+<ul>
+<li>Choose the "Manual" option.</li>
+<li>Click on the nodes to connect them manually until all desired connections are made</li>
+<li>Once done, proceed to step 4.</li>
+</ul>
+<li>Start BFS Traversal:</li>
+<ul>
+<li>Click on the "Go" button to start the BFS traversal.</li>
+<li>The traversal progresses step by step, expanding nodes and adding them to the open list while marking them as visited and moving them to the closed list.</li>
+<li>Display the current queue traversal and the nodes in the closed list.</li></ul>
+<li>View Results:</li>
+<ul>
+<li>Once the BFS traversal is complete, display the final result.</li>
+<li>Show the order of traversal, highlighting how the algorithm explored the graph.</li>
+<li>Display any relevant information about the nodes visited during traversal.</li>
+</ul>
+<li>Reload and Reset:</li>
+<ul>
+<li>If desired, use the "Reload" button to reload the graph and start over with the same settings.</li>
+<li>Alternatively, use the "Reset" button to reset the application, clearing all settings and starting from scratch.</li><ul>

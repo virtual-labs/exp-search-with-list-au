@@ -1,4 +1,26 @@
-### Link your theory in here
-Breadth first search explores the space level by level only when there are no more states to be explored at a given level does the algorithm move on to the next level.
+<h4>Theory</h4>
+<p>Breadth-First Search (BFS) explores the search space level by level, moving to the next level only when all states at the current level have been explored. We implement BFS using two lists: open and closed. The open list stores generated states whose children have not been examined, while the closed list records states that have been explored. States are added to the open list in the order they are generated and are removed using a first-in-first-out (FIFO) queue structure. The objective is to find routes using BFS with open and closed lists based on user-provided input.</p>
 
-We implement BFS using lists open and closed to keep track of progress through the state space. In the order list, the elements will be those who have been generated but whose children have not been examined. The closed list records the states that have been examined and whose children have been generated. The order of removing the states from the open list will be the order of searching. The open is maintained as a queue on the first in first out data structure. States are added to the right of the list and removed from the left
+<h5>Breadth-First Search (BFS) with open and closed lists</h5>
+<ol>
+<li>Initialization:</li>
+<ul>
+<li>start at the initial state.</li>
+<li>Initialize an empty open list and closed list.
+</li>
+</ul>
+<li>Add Initial State:</li>
+<ul><li>Add the initial state to the open list.</li></ul>
+<li>Explore States:</li>
+<ul><li>While the open list is not empty:</li>
+<li>Remove the first state from the open list (using a FIFO queue).</li>
+<li>Add this state to the closed list to mark it as explored.</li>
+<li>Generate all possible successor states from the current state.</li>
+<li>For each successor state:</li>
+<li>If it has not already been explored (not in the closed list):</li>
+<li>Add it to the open list.</li>
+<li>Mark it as a child of the current state.</li>
+</ul>
+<li>Termination:</li>
+<ul>
+<li>Repeat the process until either the goal state is found or the open list becomes empty.</ul>
