@@ -1,4 +1,4 @@
-<h4>Theory</h4>
+<h3>Theory</h3>
 <p>Breadth-First Search (BFS) explores the search space level by level, moving to the next level only when all states at the current level have been explored. We implement BFS using two lists: open and closed. The open list stores generated states whose children have not been examined, while the closed list records states that have been explored. States are added to the open list in the order they are generated and are removed using a first-in-first-out (FIFO) queue structure. The objective is to find routes using BFS with open and closed lists based on user-provided input.</p>
 
 <h5>Breadth-First Search (BFS) with open and closed lists</h5>
