@@ -1,4 +1,4 @@
-<h3>Procedure</h3> 
+
 
 <h5> Breadth-First Search (BFS) with open and closed lists</h5>
 <ol>
