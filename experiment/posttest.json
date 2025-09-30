@@ -2,89 +2,89 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "  What is the Breadth First Search Algorithm used for??",
+      "question": "You start BFS at node A in a graph. The neighbors of A are B and C. Which node will BFS visit first?",
       "answers": {
-        "a": "To search the shortest path in a graph.",
-        "b": "To search the longest path in a graph.",
-        "c": "To search the most visited node in a graph.",
-        "d": "To search the most isolated node in a graph."
+        "a": "Node B, because it was generated first.",
+        "b": "Node C, because it is alphabetically later.",
+        "c": "Randomly either B or C.",
+        "d": "Node with the highest degree."
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Correct. BFS uses FIFO order; the first generated node is visited first.",
+        "b": "Incorrect. BFS does not use alphabetical order.",
+        "c": "Incorrect. BFS is deterministic, not random.",
+        "d": "Incorrect. BFS does not prioritize by degree."
       },
       "correctAnswer": "a",
-      "difficulty": "beginner"
+      "difficulty": "intermediate"
     },
     {
-      "question": "Which data structure is used to store the nodes in the Breadth First Search Algorithm?",
+      "question": "During BFS, a node D is discovered via two paths: A→B→D and A→C→D. Which path does BFS record?",
       "answers": {
-        "a": "Stack",
-        "b": "Queue",
-        "c": "Heap",
-        "d": "Linked List"
+        "a": "The first path discovered, A→B→D.",
+        "b": "The shortest path by node count.",
+        "c": "Both paths simultaneously.",
+        "d": "The longest path to D."
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Correct. BFS records the first path to a node discovered at its level.",
+        "b": "Partially correct. In BFS all nodes at the same level are equal, first discovered is used.",
+        "c": "Incorrect. BFS does not store multiple paths unless specifically programmed.",
+        "d": "Incorrect. BFS favors shortest path by level, not longest."
+      },
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "If BFS is applied to a graph with cycles, how does the algorithm avoid infinite loops?",
+      "answers": {
+        "a": "By randomly skipping nodes.",
+        "b": "By using the closed list to track visited nodes.",
+        "c": "By limiting the depth of traversal.",
+        "d": "By using a stack instead of a queue."
+      },
+      "explanations": {
+        "a": "Incorrect. Random skipping is not part of BFS.",
+        "b": "Correct. Closed list prevents revisiting nodes and loops.",
+        "c": "Incorrect. Depth limit is optional, not standard.",
+        "d": "Incorrect. Stack is for DFS, not BFS."
       },
       "correctAnswer": "b",
-      "difficulty": "beginner"
+      "difficulty": "intermediate"
     },
     {
-      "question": "What is the time complexity of the Breadth First Search Algorithm in the worst-case scenario?",
+      "question": "BFS is applied to find the shortest path from node S to node G in an unweighted graph. What property ensures the path is shortest?",
       "answers": {
-        "a": "O(log n)",
-        "b": "O(n)",
-        "c": "O(n log n)",
-        "d": "O(n^2)"
+        "a": "Exploring all nodes at a level before moving to next level.",
+        "b": "Randomly selecting nodes until goal is found.",
+        "c": "Using a stack to traverse nodes.",
+        "d": "Ignoring previously visited nodes."
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Correct. Level-wise exploration guarantees the shortest path in unweighted graphs.",
+        "b": "Incorrect. Random selection may not find shortest path.",
+        "c": "Incorrect. Stack is used in DFS.",
+        "d": "Incorrect. Ignoring nodes alone does not ensure shortest path."
       },
-      "correctAnswer": "b",
-      "difficulty": "beginner"
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
     },
     {
-      "question": "Which list is used to store the visited nodes in the Breadth First Search Algorithm?",
+      "question": "In BFS, what happens when a goal node is discovered in the open list?",
       "answers": {
-        "a": "Open List",
-        "b": "Closed List",
-        "c": "Queue List",
-        "d": "Priority List"
+        "a": "BFS continues exploring all nodes at that level before terminating.",
+        "b": "BFS terminates immediately after removing the goal from open list.",
+        "c": "BFS ignores the goal and continues.",
+        "d": "BFS backtracks to the start node."
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Correct. BFS completes all nodes at the same level to ensure shortest path is found.",
+        "b": "Incorrect. BFS may continue if multiple nodes at same level exist.",
+        "c": "Incorrect. BFS always processes goal nodes.",
+        "d": "Incorrect. Backtracking is not part of BFS."
       },
-      "correctAnswer": "b",
-      "difficulty": "beginner"
-    },
-    {
-      "question": "What happens when a node is visited in the Breadth First Search Algorithm?",
-      "answers": {
-        "a": "The node is added to the open list.",
-        "b": "The node is removed from the open list.",
-        "c": "The node is added to the closed list.",
-        "d": "The node is removed from the closed list."
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "c",
-      "difficulty": "beginner"
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
     }
   ]
 }
