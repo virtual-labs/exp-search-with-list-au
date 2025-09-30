@@ -2,37 +2,88 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "What is the main advantage of using the Breadth First Search Algorithm?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "It guarantees the shortest path between two nodes in a graph.",
+        "b": "It requires less memory than other search algorithms.",
+        "c": "It is faster than other search algorithms.",
+        "d": "It can be used on any type of graph."
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Correct. BFS explores level by level, ensuring the shortest path in unweighted graphs.",
+        "b": "Incorrect. BFS may require significant memory for large graphs.",
+        "c": "Incorrect. BFS is not necessarily faster than all other algorithms.",
+        "d": "Incorrect. BFS works best on unweighted graphs."
       },
       "correctAnswer": "a",
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "Which of the following is NOT a step in the Breadth First Search Algorithm?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Add the start node to the open list.",
+        "b": "Remove the start node from the open list.",
+        "c": "Expand the current node and add its neighbors to the open list.",
+        "d": "Choose the neighbor with the highest priority."
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Incorrect. Adding start node is part of BFS.",
+        "b": "Incorrect. Removing nodes from open list is part of BFS.",
+        "c": "Incorrect. Expanding nodes and adding neighbors is standard.",
+        "d": "Correct. BFS does not prioritize nodes; it uses FIFO order."
+      },
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "What is the purpose of the closed list in the Breadth First Search Algorithm?",
+      "answers": {
+        "a": "To store the nodes that have been visited and expanded.",
+        "b": "To store the nodes that have not yet been visited.",
+        "c": "To store the nodes that have the highest priority.",
+        "d": "To store the nodes that have the lowest priority."
+      },
+      "explanations": {
+        "a": "Correct. Closed list prevents revisiting nodes and loops.",
+        "b": "Incorrect. Open list stores unvisited nodes.",
+        "c": "Incorrect. BFS does not use node priorities.",
+        "d": "Incorrect. Priority is not used in BFS."
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "What is the difference between the open list and the closed list in BFS?",
+      "answers": {
+        "a": "Open list stores visited nodes; closed list stores unvisited nodes.",
+        "b": "Open list stores highest priority nodes; closed list stores lowest priority nodes.",
+        "c": "Open list stores nodes yet to be expanded; closed list stores nodes that have been expanded.",
+        "d": "Open list stores nodes added to queue; closed list stores nodes removed from queue."
+      },
+      "explanations": {
+        "a": "Incorrect. This is reversed.",
+        "b": "Incorrect. BFS does not use priority-based lists.",
+        "c": "Correct. Open list tracks nodes to expand; closed list tracks expanded nodes.",
+        "d": "Incorrect. Closed list is not merely removed nodes."
       },
       "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which of the following is a drawback of using BFS?",
+      "answers": {
+        "a": "It can get stuck in loops if there are cycles in the graph.",
+        "b": "It requires too much memory for large graphs.",
+        "c": "It is not guaranteed to find the shortest path between two nodes.",
+        "d": "It is not suitable for graphs with weighted edges."
+      },
+      "explanations": {
+        "a": "Incorrect. Closed list prevents loops.",
+        "b": "Correct. BFS can consume significant memory for graphs with many nodes.",
+        "c": "Incorrect. BFS guarantees shortest path in unweighted graphs.",
+        "d": "Incorrect. BFS can be applied to weighted graphs but may not find shortest weighted path."
+      },
+      "correctAnswer": "b",
       "difficulty": "beginner"
     }
   ]

@@ -1,1 +1,2 @@
-### Aim of the experiment
+
+This experiment aims to implement and evaluate a search algorithm using open and closed lists to efficiently explore a search space. It involves assessing the algorithm's effectiveness, comparing it with other search methods, and examining the impact of different data structures and strategies on its performance.
