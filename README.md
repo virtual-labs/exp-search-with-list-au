@@ -4,7 +4,7 @@
 <b>Discipline | <b>Computer Science and Engineering
 :--|:--|
 <b> Lab | <b> Artificial Intelligence
-<b> Experiment|     <b>  Perform and visualize Random Search
+<b> Experiment|     <b>  Search With Open and Closed List
 
 
 ### About the Experiment 
